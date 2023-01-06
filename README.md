@@ -11,3 +11,5 @@ Used technologies:
 - Grid
 - Media query
 
+![image](https://user-images.githubusercontent.com/106812762/211006111-bc89e823-599a-459c-b2bb-7625647a98de.png)
+
