@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 20px;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    color: black;
+    
+}
+
+.header{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 100%;
+    min-height: 80px;
+    background-color: black;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 8px 16px;
+    flex-wrap: wrap;
+
+    
+}
+
+.headerBtnGroup{
+    display: flex;
+    gap: 20px;
+}
+
+.NavBtn{
+    background-color: transparent;
+    border: 2px solid transparent;
+    cursor: pointer;
+    color: white;
+    font-size: 18px;
+    font-family: Poppins;
+    transition: 0.4s;
+}
+
+.NavBtn:hover{
+    border-bottom: 2px solid #daa520;
+}
+
+.headerImgLogo{
+    display: flex;
+    width: 180px;
+}
+
+.welcomeTitle{
+    text-align: center;
+    font-size: 30px;
+    padding: 16px;
+    font-family: Righteous;
+    font-weight: 400;
+}
+
+.welcomeDescription{
+    text-align: center;
+    font-size: 24px;
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.ChampionsAssassin{
+    text-align: center;
+    font-size: 28px;
+    font-family: Righteous;
+    font-weight: 400;
+    padding-top: 45px;
+}
+
+.containerGrid{
+    display: grid;
+    padding: 20px;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "mainContent sideBarContent";
+    flex: 1 0 auto;
+}
+
+.mainContent{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    grid-area: mainContent;
+}
+
+.CardContainerChamp{
+    width: 250px;
+    height: 390px;
+    border: 2px solid transparent;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+.CardContainerChamp:hover{
+    border-bottom: 4px solid #daa520;
+}
+
+.CardImgMainChamp{
+    border-radius: 10px;
+    display: flex;
+}
+
+.TitleChampMain{
+    display: flex;
+    justify-content: center;
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.DescriptionChampMain{
+    font-family: Roboto;
+    font-size: 18px;
+}
+
+.sideBarContent{
+    background-color: black;
+    color: white;
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 300px;
+    gap: 20px;
+}
+.TitleSideBar{
+    font-family: Righteous;
+    font-weight: 400;
+    font-size: 22px;
+}
+
+.CardImgSideBar{
+    border-radius: 10px;
+    display: flex;
+    cursor: pointer;
+}
+
+.titleChampSidebar{
+    display: flex;
+    justify-content: center;
+    cursor: pointer;
+    font-family: Poppins;
+    font-size: 18px;
+}
+
+.titleChampSidebar:hover{
+    border-bottom: 2px solid #daa520;
+}
+
+.footer{
+    display: flex;
+    background-color: black;
+    width: 100%;
+    min-height: 80px;
+    align-items: center;
+    justify-content: center;
+}
+
+.goToTop{
+    text-decoration: none;
+    color: white;
+    font-family: Poppins;
+    cursor: pointer;
+}
+
+.goToTop:hover{
+    border-bottom: 2px solid #daa520;
+}
+
+@media (max-width:630px) {
+    .containerGrid{
+        grid-template-areas: 
+        "mainContent"
+        "sideBarContent";
+        display: flex ;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+    .sideBarContent{
+        min-width: auto;
+    }
+    .DescriptionChampMain{
+        text-align: center;
+    }
+
+    #goTotop{
+        font-size: 19px;
+    }
+
+    .CardContainerChamp{
+        height: 450px;
+    }
+}
+
+@media (max-width:460px) {
+    .header{
+        justify-content: center;
+    }
+    .foote{
+        justify-content: center;
+    }
+}
